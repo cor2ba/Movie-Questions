@@ -1,0 +1,48 @@
+.title {
+    font-size: var(--font-size-xl);
+    font-weight: 600;
+    color: var(--color-text);
+    text-align: center;
+}
+
+.made-by {
+    font-size: var(--font-size-sm);
+    font-weight: 400;
+    color: var(--color-text-secondary);
+    text-align: center;
+}
+
+.footer-button {
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    cursor: pointer;
+    border: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .title {
+        font-size: var(--font-size-lg);
+    }
+
+    .question-container {
+        width: 95%;
+    }
+
+    .question-header {
+        width: 95%;
+    }
+
+    .movies-grid {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .watch-now-container {
+        flex-direction: column-reverse;
+        gap: calc(var(--spacing-lg) * 1.5);
+    }
+
+    .footer {
+        padding-top: calc(var(--spacing-lg) * 2);
+    }
+}

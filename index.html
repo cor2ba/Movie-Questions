@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interactive movie quiz to help you discover your next favorite film">
+    <meta name="keywords" content="movies, quiz, film selection, entertainment">
+    <meta name="author" content="G.C">
+    <meta name="theme-color" content="#000000">
+    <meta property="og:title" content="Movie Questions">
+    <meta property="og:description" content="Find your next favorite movie">
+    <meta property="og:image" content="assets/images/logo.webp">
+    <title>Movie Questions</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="icon" href="assets/images/logo.webp">
+</head>
+
+<body>
+    <div class="container" role="main">
+        <div class="question-container">
+            <div class="question-header">
+                <img width="50" height="50" src="assets/images/logo.webp" alt="Movie Quiz Logo" class="logo">
+                <h1 class="title" id="title" aria-live="polite">Choose one of the three movies</h1>
+                <p class="made-by" aria-label="Created by">made by G.C</p>
+            </div>
+
+            <div class="question-counter">
+                <div class="counter-wrapper">
+                    <span class="current-number">1</span>
+                    <span class="total-questions">/3</span>
+                </div>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+            </div>
+
+            <div class="question-container">
+                <div class="movies-grid" id="moviesGrid"></div>
+            </div>
+        </div>
+        <footer class="footer" role="contentinfo">
+            <button class="footer-button" aria-label="View Privacy Policy">Privacy Policy</button>
+            <button class="footer-button" aria-label="View Terms of Service">Terms of Service</button>
+        </footer>
+    </div>
+
+    <script type="module" src="js/movieQuiz.js"></script>
+</body>
+
+</html>
